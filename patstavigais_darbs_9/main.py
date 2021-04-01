@@ -52,7 +52,7 @@ def application(environ, start_response):
 
 
 HOST = "localhost"
-PORT = 8000
+PORT = 8000  # comment from follower
 
 with make_server(HOST, PORT, application) as server:
     print(f"Serving at http://{HOST}:{PORT}/")
